@@ -70,7 +70,10 @@ title: Home
 
 <!-- About Preview -->
 <section class="about-preview py-5 text-center">
-  <img src="{{ site.baseurl }}/assets/images/about-bg.jpg" alt="About Thurman Brown Consultant" class="mt-3">
-  <p class="mt-3">At Thurman Brown Consultant Inc., we empower professionals and organizations to elevate the standard of addiction services through cutting-edge virtual training and evidence-based interventions. Our programs include SAMHSA TAP 21, Medication-Assisted Treatment, Trauma-Informed Care, and Relapse Prevention to improve client outcomes and professional growth.</p>
-  <a href="{{ site.baseurl }}/about" class="btn btn-primary mt-3">Read More</a>
+  <div class="container">
+    <h2 class="underline mb-4">About Us</h2>
+    <img src="{{ site.baseurl }}/assets/images/about-bg.jpg" alt="About Thurman Brown Consultant" class="img-fluid mb-3 mx-auto d-block">
+    <p>At Thurman Brown Consultant Inc., we empower professionals and organizations to elevate the standard of addiction services through cutting-edge virtual training and evidence-based interventions. Our programs include SAMHSA TAP 21, Medication-Assisted Treatment, Trauma-Informed Care, and Relapse Prevention to improve client outcomes and professional growth.</p>
+    <a href="{{ site.baseurl }}/about" class="btn btn-primary mt-3">Read More</a>
+  </div>
 </section>
