@@ -164,14 +164,9 @@ footer .footer-bottom {
 }
 
 /* Stats layout */
-.stats .col { padding:1.5rem 0; }
 @media(max-width:768px){
-  .stats { flex-direction: column !important; }
-  .stats .col {
-    border-bottom: 1px solid #fff;
-  }
-  .stats .col:last-child {
-    border-bottom: none;
-  }
+  .stats .row { flex-direction: column; } /* stack vertically */
+  .stats .col { border-right: none; border-bottom: 1px solid #444; }
+  .stats .col:last-child { border-bottom: none; }
 }
 
