@@ -11,10 +11,17 @@ title: About
   </div>
 </section>
 
-<!-- Company About -->
-<section class="container py-5 text-center">
-  <img src="{{ site.baseurl }}/assets/images/about-bg.jpg" class="mb-3" alt="About Thurman Brown Consultant">
-  <p>Founded in 2018, Thurman Brown Consultant Inc. emerged as a beacon of innovation in addiction care. We deliver evidence-based interventions and virtual training to empower professionals and organizations worldwide. Our mission is to enhance the standard of addiction services, improve professional competencies, and make a meaningful impact on lives and communities affected by addiction.</p>
+<!-- Company About (image right, text left) -->
+<section class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-start">
+      <h2>Who We Are</h2>
+      <p>Founded in 2018, Thurman Brown Consultant Inc. emerged as a beacon of innovation in addiction care. We deliver evidence-based interventions and virtual training to empower professionals and organizations worldwide. Our mission is to enhance the standard of addiction services, improve professional competencies, and make a meaningful impact on lives and communities affected by addiction.</p>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="{{ site.baseurl }}/assets/images/thurman-brown.jpg" alt="Thurman Brown" class="img-fluid rounded">
+    </div>
+  </div>
 </section>
 
 <!-- Stats Section -->
