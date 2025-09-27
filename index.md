@@ -15,30 +15,34 @@ title: Home
 
 <!-- Our Training Portfolio -->
 <section class="py-5 text-center">
-  <h2 class="underline">Our Training Portfolio</h2>
+  <h2 class="underline">Our Service Portfolio</h2>
   <div class="row justify-content-center mt-4">
     <div class="col-md-3 mb-4">
       <div class="card service-card">
         <h5>SAMHSA TAP 21</h5>
         <p>Comprehensive evidence-based training for addiction counseling professionals. Provides competencies for effective client engagement and recovery strategies.</p>
+        <a href="{{ site.baseurl }}/services" class="btn btn-outline-primary mt-2">Learn More</a>
       </div>
     </div>
     <div class="col-md-3 mb-4">
       <div class="card service-card">
         <h5>Medication-Assisted Treatment</h5>
         <p>Training on protocols, medications, and therapy integration. Helps professionals implement MAT in clinical practice safely and effectively.</p>
+        <a href="{{ site.baseurl }}/services" class="btn btn-outline-primary mt-2">Learn More</a>
       </div>
     </div>
     <div class="col-md-3 mb-4">
       <div class="card service-card">
         <h5>Trauma-Informed Care</h5>
         <p>Empowers providers to support clients with compassion, understand trauma, and create a safe environment for long-term recovery.</p>
+        <a href="{{ site.baseurl }}/services" class="btn btn-outline-primary mt-2">Learn More</a>
       </div>
     </div>
     <div class="col-md-3 mb-4">
       <div class="card service-card">
         <h5>Relapse Prevention</h5>
         <p>Strategies and tools to help clients maintain recovery, prevent setbacks, and achieve long-term behavioral health goals.</p>
+        <a href="{{ site.baseurl }}/services" class="btn btn-outline-primary mt-2">Learn More</a>
       </div>
     </div>
   </div>
