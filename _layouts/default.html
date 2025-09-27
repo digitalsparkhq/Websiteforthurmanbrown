@@ -8,48 +8,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     /* Navbar */
-    .navbar {
-      transition: background-color 0.3s ease, padding 0.3s ease;
-      padding: 1.2rem 2rem;
-    }
-    .navbar.scrolled {
-      background-color: #fff !important;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 0.8rem 2rem;
-    }
-    .navbar-brand {
-      font-weight: bold;
-      font-size: 1.4rem;
-    }
+    .navbar { padding: 1.5rem 2rem; }
+    .navbar-brand { font-weight: bold; font-size: 1.4rem; }
     .nav-link { font-weight: 500; }
 
     /* Hero */
-    .hero {
-      height: 80vh;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .hero-overlay {
-      position: absolute;
-      top:0; left:0; right:0; bottom:0;
-      background: rgba(0,0,0,0.5);
-    }
+    .hero { height: 100vh; background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+    .hero-overlay { position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5); }
     .hero-content { position: relative; z-index: 2; }
 
     /* Footer */
-    footer {
-      background: #111;
-      color: #aaa;
-      padding: 20px 0;
-    }
+    footer { background: #111; color: #aaa; padding: 20px 0; }
     footer .footer-top, footer .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    footer .footer-bottom { border-top: 1px solid #fff; margin-top: 10px; padding-top: 10px; }
+    footer .footer-bottom { border-top: 1px solid #fff; margin-top: 10px; padding-top: 10px; text-align:center; }
+    footer a { color:#aaa; text-decoration:none; }
+    footer a:hover { color:#fff; text-decoration:none; }
 
     /* Section Headings */
     h2.underline { position: relative; display: inline-block; margin-bottom: 1rem; }
@@ -57,24 +30,34 @@
 
     /* Stats */
     .stats { background: #222; color: #fff; padding: 3rem 1rem; text-align: center; }
-    .stats .col { border-right: 1px solid #444; }
+    .stats .col { border-right: 1px solid #444; padding:1.5rem 0; }
     .stats .col:last-child { border-right: none; }
-    @media(max-width:768px) { .stats .col { border-right: none; border-bottom:1px solid #444; padding:1.5rem 0; } }
+    @media(max-width:768px){ .stats .col{border-right:none;border-bottom:1px solid #444;} .stats .col:last-child{border-bottom:none;} }
 
     /* About Preview */
     .about-preview img { max-width: 100%; height: auto; margin-bottom: 1rem; }
 
     /* Cards */
-    .service-card { text-align:center; padding: 2rem; min-height: 220px; }
+    .service-card { text-align:center; padding: 2rem; min-height: 250px; }
     .service-card p { margin-top:1rem; }
 
     /* Services alternating */
     .service-detail img { width:100%; height: auto; object-fit: cover; max-height:400px; }
+
+    /* Contact page spacing */
+    .contact-section h3 { text-decoration: underline; margin-bottom:1rem; }
+
+    /* Team */
+    .team-members { display: flex; flex-wrap: wrap; justify-content:center; gap:2rem; }
+    .team-member { text-align:center; }
+    .team-member p { margin:0; }
+    @media(max-width:768px){ .team-members { flex-direction:column; align-items:center; } }
+
   </style>
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
     <div class="container">
       <a class="navbar-brand" href="{{ site.baseurl }}/">TBCI</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -98,16 +81,16 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-top mb-2">
-        <div class="logo fw-bold">TBCI</div>
-        <div class="footer-nav">
-          <a href="{{ site.baseurl }}/" class="text-white me-3">Home</a>
-          <a href="{{ site.baseurl }}/about" class="text-white me-3">About</a>
-          <a href="{{ site.baseurl }}/services" class="text-white me-3">Services</a>
-          <a href="{{ site.baseurl }}/contact" class="text-white">Contact</a>
+      <div class="footer-top mb-2 flex-column flex-md-row text-center text-md-start justify-content-between">
+        <div class="logo fw-bold mb-2 mb-md-0">TBCI</div>
+        <div class="footer-nav mb-2 mb-md-0">
+          <a href="{{ site.baseurl }}/" class="me-3">Home</a>
+          <a href="{{ site.baseurl }}/about" class="me-3">About</a>
+          <a href="{{ site.baseurl }}/services" class="me-3">Services</a>
+          <a href="{{ site.baseurl }}/contact">Contact</a>
         </div>
       </div>
-      <div class="footer-bottom text-center">
+      <div class="footer-bottom">
         <p>&copy; {{ "now" | date: "%Y" }} Thurman Brown Consultant Inc. All Rights Reserved.</p>
       </div>
     </div>
@@ -116,12 +99,6 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function () {
-      const nav = document.querySelector('.navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
     // Counter animation
     const counters = document.querySelectorAll(".counter");
     const speed = 200;
@@ -131,9 +108,9 @@
           const target = +counter.getAttribute("data-target");
           const count = +counter.innerText;
           const increment = Math.ceil(target / speed);
-          if(count < target) {
-            counter.innerText = Math.min(count + increment, target);
-            setTimeout(updateCount, 20);
+          if(count < target){
+            counter.innerText = Math.min(count+increment,target);
+            setTimeout(updateCount,20);
           } else { counter.innerText = target; }
         }
         updateCount();
@@ -149,15 +126,6 @@
       });
     }, {threshold:0.5});
     statsSections.forEach(section=>observer.observe(section));
-
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="{{ site.baseurl }}/contact"]').forEach(anchor=>{
-      anchor.addEventListener('click', function(e){
-        e.preventDefault();
-        const target = document.querySelector('.contact-section');
-        if(target) target.scrollIntoView({behavior:'smooth'});
-      });
-    });
   </script>
 </body>
 </html>
