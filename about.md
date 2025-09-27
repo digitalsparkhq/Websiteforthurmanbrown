@@ -47,7 +47,7 @@ title: About
 <!-- Our Team -->
 <section class="container py-5 text-center">
   <h2 class="underline">OUR TEAM</h2>
-  <div class="row mt-4">
+  <div class="row justify-content-center mt-4">
     <div class="col-md-4 mb-4">
       <div class="team-member">
         <img src="{{ site.baseurl }}/assets/images/team1.jpg" alt="Member 1" class="img-fluid rounded mb-2">
