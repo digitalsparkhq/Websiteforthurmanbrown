@@ -1,4 +1,5 @@
 title: Thurman Brown Consultant Inc.
 description: Pioneering Excellence in Addiction Care
-baseurl: "" 
-url: "" 
+
+url: "https://digitalsparkhq.github.io"   # your GitHub username’s domain
+baseurl: "/Websiteforthurmanbrown"        # repo name
