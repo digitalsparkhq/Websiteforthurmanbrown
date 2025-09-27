@@ -4,15 +4,28 @@
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    nav { margin-bottom: 2rem; }
+    nav a { margin-right: 1rem; }
+  </style>
 </head>
 <body>
   <header>
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/services/' | relative_url }}">Services</a>
+      <a href="{{ '/leadership/' | relative_url }}">Leadership</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
   </header>
+
   <main class="container">
     {{ content }}
   </main>
+
   <footer>
     <small>&copy; {{ site.time | date: "%Y" }} Thurman Brown Consultant Inc.</small>
   </footer>
