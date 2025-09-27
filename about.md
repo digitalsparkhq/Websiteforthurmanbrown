@@ -47,21 +47,38 @@ title: About
 <!-- Our Team -->
 <section class="container py-5 text-center">
   <h2 class="underline">OUR TEAM</h2>
-  <div class="team-members mt-4">
-    <div class="team-member">
-      <img src="{{ site.baseurl }}/assets/images/team1.jpg" alt="Member 1" class="img-fluid rounded mb-2">
-      <p><strong>Member 1</strong></p>
-      <p>Role/Designation</p>
+  <div class="row mt-4">
+    <div class="col-md-4 mb-4">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/assets/images/team1.jpg" alt="Member 1" class="img-fluid rounded mb-2">
+        <p><strong>Member 1</strong></p>
+        <p>Role</p>
+        <p>Designation</p>
+      </div>
     </div>
-    <div class="team-member">
-      <img src="{{ site.baseurl }}/assets/images/team2.jpg" alt="Member 2" class="img-fluid rounded mb-2">
-      <p><strong>Member 2</strong></p>
-      <p>Role/Designation</p>
+    <div class="col-md-4 mb-4">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/assets/images/team2.jpg" alt="Member 2" class="img-fluid rounded mb-2">
+        <p><strong>Member 2</strong></p>
+        <p>Role</p>
+        <p>Designation</p>
+      </div>
     </div>
-    <div class="team-member">
-      <img src="{{ site.baseurl }}/assets/images/team3.jpg" alt="Member 3" class="img-fluid rounded mb-2">
-      <p><strong>Member 3</strong></p>
-      <p>Role/Designation</p>
+    <div class="col-md-4 mb-4">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/assets/images/team3.jpg" alt="Member 3" class="img-fluid rounded mb-2">
+        <p><strong>Member 3</strong></p>
+        <p>Role</p>
+        <p>Designation</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="team-member">
+        <img src="{{ site.baseurl }}/assets/images/team4.jpg" alt="Member 4" class="img-fluid rounded mb-2">
+        <p><strong>Member 4</strong></p>
+        <p>Role</p>
+        <p>Designation</p>
+      </div>
     </div>
   </div>
 </section>
