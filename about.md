@@ -4,7 +4,7 @@ title: About
 ---
 
 <!-- Featured Image -->
-<section class="hero" style="background-image: url('{{ site.baseurl }}/assets/images/about-bg.jpg'); height: 60vh;">
+<section class="hero" style="background-image: url('{{ site.baseurl }}/assets/images/about-bg.jpg'); height: 80vh;">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>About Us</h1>
