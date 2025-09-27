@@ -3,50 +3,58 @@ layout: default
 title: About
 ---
 
-<section class="hero" style="background-image: url('{{ site.baseurl }}/assets/images/about-bg.jpg'); height: 300px;">
+<!-- Featured Image -->
+<section class="hero" style="background-image: url('{{ site.baseurl }}/assets/images/about-bg.jpg'); height: 60vh;">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>About Us</h1>
   </div>
 </section>
 
-<section class="container my-5">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h2>Who We Are</h2>
-      <p>Founded in 2018, Thurman Brown Consultant Inc. emerged as a beacon of innovation in addiction care. We deliver evidence-based interventions and virtual training to empower professionals and organizations worldwide.</p>
-    </div>
-    <div class="col-md-6">
-      <img src="{{ site.baseurl }}/assets/images/thurman-brown.jpg" class="img-fluid rounded" alt="Thurman Brown">
-    </div>
+<!-- Company About -->
+<section class="container py-5 text-center">
+  <img src="{{ site.baseurl }}/assets/images/about-bg.jpg" class="mb-3" alt="About Thurman Brown Consultant">
+  <p>Founded in 2018, Thurman Brown Consultant Inc. emerged as a beacon of innovation in addiction care. We deliver evidence-based interventions and virtual training to empower professionals and organizations worldwide. Our mission is to enhance the standard of addiction services, improve professional competencies, and make a meaningful impact on lives and communities affected by addiction.</p>
+</section>
+
+<!-- Stats Section -->
+<section class="stats row text-center text-white m-0">
+  <div class="col counter-col">
+    <span class="counter" data-target="500">0</span>
+    <p>Professionals Trained</p>
+  </div>
+  <div class="col counter-col">
+    <span class="counter" data-target="200">0</span>
+    <p>Training Sessions</p>
+  </div>
+  <div class="col counter-col">
+    <span class="counter" data-target="100">0</span>
+    <p>Organizations Served</p>
+  </div>
+  <div class="col counter-col">
+    <span class="counter" data-target="7">0</span>
+    <p>Years of Excellence</p>
   </div>
 </section>
 
-<section class="bg-dark text-white py-5">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-md-3"><h3 class="counter" data-target="500">0</h3><p>Professionals Trained</p></div>
-      <div class="col-md-3"><h3 class="counter" data-target="200">0</h3><p>Training Sessions</p></div>
-      <div class="col-md-3"><h3 class="counter" data-target="100">0</h3><p>Organizations Served</p></div>
-      <div class="col-md-3"><h3 class="counter" data-target="7">0</h3><p>Years of Excellence</p></div>
+<!-- Our Team -->
+<section class="container py-5 text-center">
+  <h2 class="underline">OUR TEAM</h2>
+  <div class="team-members mt-4">
+    <div class="team-member">
+      <img src="{{ site.baseurl }}/assets/images/team1.jpg" alt="Member 1" class="img-fluid rounded mb-2">
+      <p><strong>Member 1</strong></p>
+      <p>Role/Designation</p>
     </div>
-  </div>
-</section>
-
-<section class="container my-5">
-  <h2 class="text-center mb-4">OUR TEAM</h2>
-  <div class="d-flex justify-content-center gap-4 flex-wrap">
-    <div class="text-center">
-      <img src="{{ site.baseurl }}/assets/images/team1.jpg" class="img-fluid rounded" alt="Team Member 1">
-      <p class="mt-2">Member 1 – Role</p>
+    <div class="team-member">
+      <img src="{{ site.baseurl }}/assets/images/team2.jpg" alt="Member 2" class="img-fluid rounded mb-2">
+      <p><strong>Member 2</strong></p>
+      <p>Role/Designation</p>
     </div>
-    <div class="text-center">
-      <img src="{{ site.baseurl }}/assets/images/team2.jpg" class="img-fluid rounded" alt="Team Member 2">
-      <p class="mt-2">Member 2 – Role</p>
-    </div>
-    <div class="text-center">
-      <img src="{{ site.baseurl }}/assets/images/team3.jpg" class="img-fluid rounded" alt="Team Member 3">
-      <p class="mt-2">Member 3 – Role</p>
+    <div class="team-member">
+      <img src="{{ site.baseurl }}/assets/images/team3.jpg" alt="Member 3" class="img-fluid rounded mb-2">
+      <p><strong>Member 3</strong></p>
+      <p>Role/Designation</p>
     </div>
   </div>
 </section>
