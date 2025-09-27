@@ -164,8 +164,8 @@ footer .footer-bottom {
 }
 
 /* Stats layout */
-@media(max-width:768px){
-  .stats .row { flex-direction: column; } /* stack vertically */
+@media (max-width: 768px) {
+  .stats.row { flex-direction: column !important; } /* force vertical stacking */
   .stats .col { border-right: none; border-bottom: 1px solid #444; }
   .stats .col:last-child { border-bottom: none; }
 }
