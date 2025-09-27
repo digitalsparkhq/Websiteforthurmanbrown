@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+  <main class="container">
+    {{ content }}
+  </main>
+  <footer>
+    <small>&copy; {{ site.time | date: "%Y" }} Thurman Brown Consultant Inc.</small>
+  </footer>
+</body>
+</html>
