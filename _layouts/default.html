@@ -3,33 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <title>{{ page.title }} | Thurman Brown Consultant Inc.</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Navbar */
+    .navbar {
+      transition: background-color 0.3s ease;
+    }
+    .navbar.scrolled {
+      background-color: #fff !important;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
-  <header id="navbar">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
     <div class="container">
-      <a class="logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/about' | relative_url }}">About</a>
-        <a href="{{ '/services' | relative_url }}">Services</a>
-        <a href="{{ '/contact' | relative_url }}">Contact</a>
-      </nav>
+      <a class="navbar-brand fw-bold" href="{{ site.baseurl }}/">TBCI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <!-- Page Content -->
-  <main>
+  <main class="pt-5">
     {{ content }}
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; {{ "now" | date: "%Y" }} Thurman Brown Consultant Inc. All Rights Reserved.</p>
+    </div>
   </footer>
 
-  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function () {
+      const nav = document.querySelector('.navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
 </body>
 </html>
