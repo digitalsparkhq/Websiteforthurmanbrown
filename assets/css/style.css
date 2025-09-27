@@ -165,15 +165,17 @@ footer .footer-bottom {
 
 /* Stats layout */
 @media (max-width: 768px) {
-  .stats.row {
-    flex-direction: column !important; /* stack vertically */
+  .stats {
+    display: block !important;  /* stack vertically */
+    padding: 2rem 1rem;
   }
   .stats .col {
-    border-right: none;            /* remove desktop right border */
-    border-bottom: 1px solid #444; /* add bottom border for separation */
+    display: block !important;
+    border-right: none;
+    border-bottom: 1px solid #444;
+    padding: 1.5rem 0;
   }
   .stats .col:last-child {
-    border-bottom: none;           /* remove border for last item */
+    border-bottom: none;
   }
 }
-
